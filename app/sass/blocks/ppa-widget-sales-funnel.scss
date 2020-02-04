@@ -1,0 +1,211 @@
+.ppa-widget-sales-funnel {
+  width: 464px;
+  min-height: 712px;
+  background-color: #fff;
+  border: 1px solid #E2E9E9;
+  box-sizing: border-box;
+  border-radius: 12px;
+}
+
+.ppa-widget-sales-funnel__chart {
+  height: 438px;
+  border-bottom: 1px solid #E2E9E9;
+}
+
+.ppa-page-sales-funnel__top {
+  display: flex;
+  padding-left: 24px;
+  padding-right: 16px;
+  padding-top: 16px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.ppa-widget-sales-funnel__header {
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2B363B;
+}
+
+.ppa-widget-sales-funnel__menu {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  &:hover {
+    background-color: #F6F8F9;
+  }
+}
+
+.ppa-widget-sales-funnel__menu::after,
+.ppa-widget-sales-funnel__menu::before {
+  position: absolute;
+  display: block;
+  left: 18px;
+  width: 4px;
+  height: 4px;
+  content: "";
+  background-color: #2B363B;
+  border-radius: 50%;
+}
+
+.ppa-widget-sales-funnel__menu::after {
+   top: 13px;
+}
+
+.ppa-widget-sales-funnel__menu::before {
+  bottom: 13px;
+}
+
+.ppa-page-sales-funnel__bottom {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 320px;
+  margin: auto;
+  margin-top: 14px;
+}
+
+.ppa-page-sales-funnel__text {
+  position: absolute;
+  text-align: center;
+}
+
+.ppa-page-sales-funnel__trend {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.ppa-page-sales-funnel__trend-icon,
+.ppa-page-sales-funnel__trend-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.ppa-page-sales-funnel__trend-icon {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: rgba(82, 199, 88, 0.2);
+  font-size: 14px;
+  color: #52C758;
+  vertical-align: middle;
+}
+
+.ppa-page-sales-funnel__trend-icon--increase {
+  margin-top: 7px;
+}
+
+.ppa-page-sales-funnel__trend-text {
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #52C758;
+}
+
+.ppa-page-sales-funnel__turnover {
+  position: relative;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 32px;
+  color: #2B363B;
+}
+
+.ppa-page-sales-funnel__label {
+  position: relative;
+  margin-top: 25px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #627884;
+}
+
+/* Легенда */
+.ppa-widget-sales-funnel__legend {
+  padding-left: 40px;
+  padding-top: 24px;
+  padding-right: 49px;
+  padding-bottom: 24px;
+}
+
+.ppa-widget-sales-funnel__legend-redeemed,
+.ppa-widget-sales-funnel__legend-revoked,
+.ppa-widget-sales-funnel__legend-returned,
+.ppa-widget-sales-funnel__legend-processing {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 56px;
+  //outline: 1px solid red;
+}
+
+.ppa-widget-sales-funnel__legend-label {
+  width: 127px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2B363B;
+}
+
+.ppa-widget-sales-funnel__legend-chart {
+  width: 138px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: #F6F8F9;
+}
+
+.ppa-widget-sales-funnel__legend-chart--redeemed {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #61D267;
+}
+
+.ppa-widget-sales-funnel__legend-chart--revoked {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #FA3264;
+}
+
+.ppa-widget-sales-funnel__legend-chart--returned {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #627884;
+}
+
+.ppa-widget-sales-funnel__legend-chart--processing {
+  height: 4px;
+  border-radius: 2px;
+  background-color: #E2E9E9;
+}
+
+.ppa-widget-sales-funnel__legend-value {
+  width: 79px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #2B363B;
+  text-align: right;
+}
+
+.ppa-widget-sales-funnel__legend-arrow {
+  margin-left: 23px;
+  cursor: pointer;
+}

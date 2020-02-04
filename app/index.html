@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Виджет "Воронка продаж"</title>
+  <meta name="description" content="">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.min.css">
+  <script src="libs/d3/d3.min.js"></script>
+</head>
+
+<body class="ppa-page-sales-funnel">
+<section class="ppa-widget-sales-funnel">
+  <div class="ppa-widget-sales-funnel__chart">
+    <div class="ppa-page-sales-funnel__top">
+      <h2 class="ppa-widget-sales-funnel__header">Статусы</h2>
+      <div class="ppa-widget-sales-funnel__menu"></div>
+    </div>
+    <div class="ppa-page-sales-funnel__bottom">
+      <div id="graphic-sales-funnel" class="graphic-sales-funnel"></div>
+      <div class="ppa-page-sales-funnel__text">
+        <div class="ppa-page-sales-funnel__trend">
+          <div class="ppa-page-sales-funnel__trend-icon">
+            <svg class="ppa-page-sales-funnel__trend-icon--increase" width="10" height="8" viewBox="0 0 10 8" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0.956249 6.47L4.152 1.3568C4.54367 0.730129 5.45633 0.730129 5.848 1.3568L9.04375 6.47C9.46003 7.13605 8.98119 8 8.19575 8H1.80425C1.01881 8 0.539969 7.13605 0.956249 6.47Z" fill="#52C758"></path></svg>
+          </div>
+          <div class="ppa-page-sales-funnel__trend-text">+2.1M</div>
+        </div>
+        <div class="ppa-page-sales-funnel__turnover">22&nbsp;727&nbsp;807</div>
+        <div class="ppa-page-sales-funnel__label">Оборот, ₽</div>
+      </div>
+    </div>
+  </div>
+  <div class="ppa-widget-sales-funnel__legend">
+    <div class="ppa-widget-sales-funnel__legend-redeemed">
+      <div class="ppa-widget-sales-funnel__legend-label">Выкуплены</div>
+      <div class="ppa-widget-sales-funnel__legend-chart">
+        <div class="ppa-widget-sales-funnel__legend-chart--redeemed"></div>
+      </div>
+      <div class="ppa-widget-sales-funnel__legend-value">17.2M&nbsp;₽</div>
+      <div class="ppa-widget-sales-funnel__legend-arrow">
+        <svg class="ppa-widget-sales-funnel__legend-arrow-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#98AAB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </div>
+    <div class="ppa-widget-sales-funnel__legend-revoked">
+      <div class="ppa-widget-sales-funnel__legend-label">Отменены</div>
+      <div class="ppa-widget-sales-funnel__legend-chart">
+        <div class="ppa-widget-sales-funnel__legend-chart--revoked"></div>
+      </div>
+      <div class="ppa-widget-sales-funnel__legend-value">3.2M&nbsp;₽</div>
+      <div class="ppa-widget-sales-funnel__legend-arrow">
+        <svg class="ppa-widget-sales-funnel__legend-arrow-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#98AAB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </div>
+    <div class="ppa-widget-sales-funnel__legend-returned">
+      <div class="ppa-widget-sales-funnel__legend-label">Возвращены</div>
+      <div class="ppa-widget-sales-funnel__legend-chart">
+        <div class="ppa-widget-sales-funnel__legend-chart--returned"></div>
+      </div>
+      <div class="ppa-widget-sales-funnel__legend-value">0.3M&nbsp;₽</div>
+      <div class="ppa-widget-sales-funnel__legend-arrow">
+        <svg class="ppa-widget-sales-funnel__legend-arrow-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#98AAB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </div>
+    <div class="ppa-widget-sales-funnel__legend-processing">
+      <div class="ppa-widget-sales-funnel__legend-label">В обработке</div>
+      <div class="ppa-widget-sales-funnel__legend-chart">
+        <div class="ppa-widget-sales-funnel__legend-chart--processing"></div>
+      </div>
+      <div class="ppa-widget-sales-funnel__legend-value">1.2M&nbsp;₽</div>
+      <div class="ppa-widget-sales-funnel__legend-arrow">
+        <svg class="ppa-widget-sales-funnel__legend-arrow-svg" width="7" height="12" viewBox="0 0 7 12" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 1L6 6L1 11" stroke="#98AAB3" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+      </div>
+    </div>
+  </div>
+</section>
+<script src="js/scripts.min.js"></script>
+</body></html>

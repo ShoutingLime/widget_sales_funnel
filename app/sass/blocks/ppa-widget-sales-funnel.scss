@@ -150,7 +150,7 @@
   align-items: center;
   width: 100%;
   height: 56px;
-  //outline: 1px solid red;
+  cursor: pointer;
 }
 
 .ppa-widget-sales-funnel__legend-label {
@@ -207,5 +207,135 @@
 
 .ppa-widget-sales-funnel__legend-arrow {
   margin-left: 23px;
-  cursor: pointer;
+}
+
+/* Меню */
+.ppa-widget-sales-funnel__menu-popup {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  width: 236px;
+  height: 224px;
+  right: -196px;
+  top: 44px;
+  background-color: #FFFFFF;
+  border: 1px solid #E2E9E9;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05), 0px 2px 6px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 3px;
+}
+
+.ppa-widget-sales-funnel__menu-popup a {
+  text-decoration: none;
+}
+
+.ppa-widget-sales-funnel__menu-popup-item {
+  height: 52.5px;
+  padding: 24px;
+  box-sizing: border-box;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #2B363B;
+}
+
+.ppa-widget-sales-funnel__menu-popup a:nth-child(1) .ppa-widget-sales-funnel__menu-popup-item {
+  padding-top: 16px;
+   padding-bottom: 16px;
+}
+
+.ppa-widget-sales-funnel__menu-popup a:nth-child(2) .ppa-widget-sales-funnel__menu-popup-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ppa-widget-sales-funnel__menu-popup a:nth-child(3) .ppa-widget-sales-funnel__menu-popup-item {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.ppa-widget-sales-funnel__menu-popup a:last-child .ppa-widget-sales-funnel__menu-popup-item {
+  height: 64px;
+  border-top: 1px solid #E2E9E9;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.ppa-widget-sales-funnel__menu-popup-item:hover {
+  background-color: #E8F5E9;
+}
+
+.visible-flex {
+  display: flex;
+}
+
+/* Тултипсы */
+.segment1Tooltip,
+.segment2Tooltip,
+.segment3Tooltip,
+.segment4Tooltip {
+  position: absolute;
+  padding: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.05), 0px 2px 6px rgba(0, 0, 0, 0.1), 0px 6px 12px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  z-index: 10;
+  display: none;
+  &::before {
+    display: block;
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    top: -12px;
+    left: 0;
+    border-bottom: 24px solid #FFFFFF;
+    border-right: 24px solid transparent;
+  }
+}
+
+.segment1Tooltip-share,
+.segment2Tooltip-share,
+.segment3Tooltip-share,
+.segment4Tooltip-share {
+  width: fit-content;
+  background-color: #52C758;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin-bottom: 8px;
+  color: #FFFFFF;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.segment1Tooltip-value,
+.segment2Tooltip-value,
+.segment3Tooltip-value,
+.segment4Tooltip-value {
+  margin-bottom: 8px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2B363B;
+}
+
+.segment1Tooltip-label,
+.segment2Tooltip-label,
+.segment3Tooltip-label,
+.segment4Tooltip-label {
+  font-family: Montserrat, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #627884;
 }

@@ -13,13 +13,46 @@
 
 <body class="ppa-page-sales-funnel">
 <section class="ppa-widget-sales-funnel">
+  <!-- Область кольцевой диаграммы -->
   <div class="ppa-widget-sales-funnel__chart">
+    <!-- Название и меню -->
     <div class="ppa-page-sales-funnel__top">
       <h2 class="ppa-widget-sales-funnel__header">Статусы</h2>
-      <div class="ppa-widget-sales-funnel__menu"></div>
+      <div class="ppa-widget-sales-funnel__menu">
+        <div class="ppa-widget-sales-funnel__menu-popup">
+          <a href="#"><div class="ppa-widget-sales-funnel__menu-popup-item">Настроить</div></a>
+          <a href="#"><div class="ppa-widget-sales-funnel__menu-popup-item">Закрепить</div></a>
+          <a href="#"><div class="ppa-widget-sales-funnel__menu-popup-item">Сравнить</div></a>
+          <a href="#"><div class="ppa-widget-sales-funnel__menu-popup-item">Закрыть</div></a>
+        </div>
+      </div>
     </div>
+    <!-- /Название и меню -->
+    <!-- "Пончик" -->
     <div class="ppa-page-sales-funnel__bottom">
       <div id="graphic-sales-funnel" class="graphic-sales-funnel"></div>
+      <!-- Тултипсы -->
+      <div class="segment1Tooltip">
+        <div class="segment1Tooltip-share">75,8%</div>
+        <div class="segment1Tooltip-value">17223441&nbsp;₽</div>
+        <div class="segment1Tooltip-label">Выкуплены</div>
+      </div>
+      <div class="segment2Tooltip">
+        <div class="segment2Tooltip-share">14,1%</div>
+        <div class="segment2Tooltip-value">3223441&nbsp;₽</div>
+        <div class="segment2Tooltip-label">Отменены</div>
+      </div>
+      <div class="segment3Tooltip">
+        <div class="segment3Tooltip-share">1,1%</div>
+        <div class="segment3Tooltip-value">323441&nbsp;₽</div>
+        <div class="segment3Tooltip-label">Возвращены</div>
+      </div>
+      <div class="segment4Tooltip">
+        <div class="segment4Tooltip-share">9,0%</div>
+        <div class="segment4Tooltip-value">1223441&nbsp;₽</div>
+        <div class="segment4Tooltip-label">В обработке</div>
+      </div>
+
       <div class="ppa-page-sales-funnel__text">
         <div class="ppa-page-sales-funnel__trend">
           <div class="ppa-page-sales-funnel__trend-icon">
@@ -31,7 +64,10 @@
         <div class="ppa-page-sales-funnel__label">Оборот, ₽</div>
       </div>
     </div>
+    <!-- /"Пончик" -->
   </div>
+  <!-- /Область кольцевой диаграммы -->
+  <!-- Область легенды -->
   <div class="ppa-widget-sales-funnel__legend">
     <div class="ppa-widget-sales-funnel__legend-redeemed">
       <div class="ppa-widget-sales-funnel__legend-label">Выкуплены</div>
@@ -74,6 +110,7 @@
       </div>
     </div>
   </div>
+  <!-- /Область легенды -->
 </section>
 <script src="js/scripts.min.js"></script>
 </body></html>
